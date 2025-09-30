@@ -39,13 +39,13 @@ If you decide to use the same dataset, please keep the same folder structure for
     - `POST: http://localhost:8000/ask`
 
 #### MiniIO interface
-![SS-1](./screenshots/SS1.png)
+![SS-1](./Screenshots/SS1.png)
 #### Qdrant interface
-![SS-2](./screenshots/SS2.png)
+![SS-2](./Screenshots/SS2.png)
 #### PostgreSQL Interface
-![SS-3](./screenshots/SS3.png)    
+![SS-3](./Screenshots/SS3.png)    
 #### Postman Ask Question Endpoint
-![SS-4](./screenshots/SS4.png) 
+![SS-4](./Screenshots/SS4.png) 
 
 ### Additional Note
 For the A simple question takes about 25min on a cold start and 10min in general to answer which is very long. This needs to be solved. Adding to the list of improvements, I can 
