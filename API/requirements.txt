@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-multipart
+psycopg2-binary
+qdrant-client
+sentence-transformers==4.1.0
+transformers==4.41.0
+pdfplumber
+python-dotenv
+minio
+langchain
+langchain-community
+openai
+torch
+accelerate==0.21.0
+bitsandbytes
+

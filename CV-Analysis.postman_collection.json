@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "8453f541-a256-43f1-8497-7feef3cddf3e",
+		"name": "CV-Analysis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23489460"
+	},
+	"item": [
+		{
+			"name": "UploadCV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Programming/AI/AI-Self/VectorDatabase-CVAnalyis/DummyData/Alex_Marinescu_Resume.pdf"
+						},
+						{
+							"key": "name",
+							"value": "Alex Marinescu",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "alex_mar1999@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ML Engineer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base-url-local}}{{upload-cv-path}}",
+					"host": [
+						"{{base-url-local}}{{upload-cv-path}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "question",
+							"value": "What are the most common skills in finance resumes?",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base-url-local}}{{ask-question-path}}",
+					"host": [
+						"{{base-url-local}}{{ask-question-path}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base-url-local",
+			"value": "http://localhost:8000/",
+			"type": "string"
+		},
+		{
+			"key": "upload-cv-path",
+			"value": "upload_cv",
+			"type": "string"
+		},
+		{
+			"key": "ask-question-path",
+			"value": "ask",
+			"type": "string"
+		}
+	]
+}

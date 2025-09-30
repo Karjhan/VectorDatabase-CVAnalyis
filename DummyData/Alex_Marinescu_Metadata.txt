@@ -1,0 +1,3 @@
+name: Alex Marinescu
+email: alex_mar1999@yahii.com
+role: ML Engineer
